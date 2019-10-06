@@ -1,4 +1,4 @@
 <form method="post" action="<%=student_path(@student)%>">
-  <input type="checkbox" checked: if value="<%=if @student.active then "Activate" else "Inactivate"end%>">
+  <input type="checkbox" <%='checked' if @owner.pets.include?(pet) %> value="<%=if @student.active then "Activate" else "Inactivate"end%>">
   <input type="submit" value="submit">
 </form>
